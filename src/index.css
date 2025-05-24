@@ -1,13 +1,395 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: Sora;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+body {
+  height: 100%;
+}
+
+.header {
+  padding-top: 1.5rem;
+  padding-left: 8rem;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 12px 24px 0px #0000000a;
+  max-width: 210rem;
+}
+
+.brand-logo {
+  width: 84px;
+  height: 87px;
+}
+
+.link-address-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.2rem;
+}
+
+.main-nav-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.nav-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.fant-word {
+  margin-bottom: 8px;
+  color: #3a415466;
+}
+
+.number-info-city {
+  font-family: Sora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3a4154;
+}
+
+.logo-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.volunteer {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #111c42;
+  padding-right: 8rem;
+}
+
+.link-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111c42;
+  padding: 2.2rem 8rem 2.2rem 2.2rem;
+  border-top-left-radius: 16px;
+}
+
+.link-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link-style {
+  font-family: Sora;
+  font-size: 14.5px;
+  font-weight: 400;
+  color: #ffffff99;
+  text-decoration: none;
+}
+
+.home {
+  border-bottom: solid 3px #59ba51;
+}
+
+.green-link {
+  font-family: Sora;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #59ba51;
+  padding: 14px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 9px;
+}
+
+/*   MISWE BACKGROUND   */
+.misweTogether {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 110rem;
+}
+.miswe-background {
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
+  padding-left: 8rem;
+}
+
+.heading-primary {
+  font-family: Sora;
+  font-size: 44px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.margin-bottom {
+  margin-bottom: 44px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 80px;
+}
+
+.two-button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+.button--one {
+  width: 160px;
+  height: 53px;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #59ba51;
+  border: none;
+}
+
+.button--two {
+  width: 160px;
+  height: 30px;
+  padding-top: 20px;
+  font-size: 14;
+  color: #ffffff;
+  border-radius: 6px;
+  border: solid 1px #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*   TOGETHER DIV   */
+.together-div {
+  margin-left: 8rem;
+  padding: 4rem 8rem 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 77.58%;
+  height: 40px;
+  position: absolute;
+  top: 85%;
+  background-color: #111c42;
+  box-shadow: 0px 15px 44px 0px #007aff26;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.newsHeading {
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 4%;
+}
+
+.heading-four {
+  font-size: 24px;
+  font-family: Sora;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 8%;
+  margin-bottom: 20px;
+}
+
+.togetherParagraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffffb2;
+}
+
+/* WHO WE ARE */
+.whoWeAre {
+  margin-top: 15rem;
+  padding: 0 8rem 9rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 14rem;
+  position: relative;
+  max-width: 110rem;
+}
+
+.heading-five {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111c42;
+  margin-bottom: 15px;
+}
+
+.who-paragraph {
+  font-family: Sora;
+  font-weight: 400;
+  color: #111c4280;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.who-margin-top {
+  margin-top: 20px;
+}
+
+.now-more-button {
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  background-color: #59ba51;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.backward-image {
+  width: 100%;
+  height: 100%;
+  align-content: end;
+  align-items: end;
+}
+
+.twoImages {
+  position: relative;
+}
+
+.farmer-image {
+  position: absolute;
+  top: 38%;
+  right: 64%;
+  width: 60%;
+  height: 67%;
+}
+
+/* OUR SERVICES */
+.div-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Our-service {
+  padding: 4rem 8rem;
+  background-color: #3a415408;
+  max-width: 110rem;
+  width: 100%;
+}
+
+.heading-six {
+  font-size: 15px;
+  line-height: 25px;
+  color: #111c4266;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.secondary-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  color: #111c42;
+  margin-top: 16px;
+}
+
+.we-Do-div {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 3rem;
+}
+
+.agriculture {
+  display: flex;
+  gap: 20px;
+  padding: 2.5rem 3.5rem;
+  box-shadow: 0px 12px 24px 0px #0000000D;
+}
+
+.education {
+  display: flex;
+  gap: 20px;
+  padding: 2.5rem 3.5rem;
+  background-color: #ffffff;
+  box-shadow: 0px 12px 24px 0px #0000000D;
+}
+
+.water {
+  display: flex;
+  gap: 20px;
+  padding: 2.5rem 3.5rem;
+  box-shadow: 0px 12px 24px 0px #0000000D;
+}
+
+.we-do-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 14px;
+}
+
+.we-do-paragraph {
+  line-height: 25px;
+  font-size: 12px;
+  color: #3a4154;
+}
+
+.icon-we-do {
+  width: 30px;
+  height: 30px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.learn-more-anchor {
+  margin-top: 24px;
+  text-decoration: none;
+  color: #3a4154;
+}
+
+.view-more {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 27px;
+  padding: 5px 16px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #59ba51;
+  border-radius: 6px;
 }
