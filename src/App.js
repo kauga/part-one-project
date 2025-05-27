@@ -1,10 +1,19 @@
+import AboutUs from "./pages/aboutUs";
+
 export default function App() {
   return (
-    <div id="root">
-      <Header />
-      <MisweLivestock />
-      <WhoWeAre />
-      <OurService />
+    <div className="div-wrappe">
+      <div id="root">
+        <Header />
+        <MisweLivestock />
+        <WhoWeAre />
+        <OurService />
+        <VolunteerTestimonial />
+        <HelpUsDonate />
+        <CidiSubscribe />
+        <Footer />
+        <AboutUs />
+      </div>
     </div>
   );
 }
@@ -237,7 +246,243 @@ function OurService() {
           </div>
         </div>
 
-        <a href="view" className="view-more">View More</a>
+        <a href="view" className="kauga">
+          View More
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function VolunteerTestimonial() {
+  return (
+    <div className="div-wrapper">
+      <div className="volunteer-testimonial">
+        <h6 className="heading-six">Feedback</h6>
+        <h5 className="secondary-heading">Volunteer Testimonials.</h5>
+
+        <div className="slider">
+          <div className="slide">
+            <img
+              src="/image/colons.png"
+              alt="semi colon"
+              className="semi-colons"
+            />
+
+            <p className="testimonial-paragraph">
+              “Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit. Tellus nisi <br /> consectetur
+              porta quam ut ultrices.
+              <br /> Praesent nunc ”.
+            </p>
+
+            <span className="line">⎯</span>
+
+            <img
+              src="/image/image-four.png"
+              className="testimonials-image"
+              alt="testimonial"
+            />
+
+            <p className="name-testimonial">Kidibra</p>
+          </div>
+
+          <div className="slide">
+            <img
+              src="/image/colons.png"
+              alt="semi colon"
+              className="semi-colons"
+            />
+
+            <p className="testimonial-paragraph">
+              “Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit. Tellus nisi <br /> consectetur
+              porta quam ut ultrices.
+              <br /> Praesent nunc ”.
+            </p>
+
+            <span className="line">⎯</span>
+
+            <img
+              src="/image/image-three.png"
+              className="testimonials-image"
+              alt="testimonial"
+            />
+
+            <p className="name-testimonial">Dalali Annular</p>
+          </div>
+
+          <div className="slide">
+            <img
+              src="/image/colons.png"
+              alt="semi colon"
+              className="semi-colons"
+            />
+
+            <p className="testimonial-paragraph">
+              “Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit. Tellus nisi <br /> consectetur
+              porta quam ut ultrices.
+              <br /> Praesent nunc ”.
+            </p>
+
+            <span className="line">⎯</span>
+
+            <img
+              src="/image/image-two.png"
+              className="testimonials-image"
+              alt="testimonial"
+            />
+
+            <p className="name-testimonial">Kinate</p>
+          </div>
+        </div>
+
+        <nav className="previous-next-button">
+          <button className="button--button prev-button">←</button>
+          <button className="button--button next-button">→</button>
+        </nav>
+      </div>
+    </div>
+  );
+}
+
+function HelpUsDonate() {
+  return (
+    <div className="div-wrapper">
+      <div className="help-donate">
+        <p className="help-paragraph">Help us Improve Agriculture Livelihood</p>
+
+        <a href="donate" className="button-donate">
+          Donate
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function CidiSubscribe() {
+  return (
+    <div className="div-wrapper">
+      <div className="cidi-subscribe">
+        <div className="cidi-word">
+          <img
+            src="/image/logo-image.png"
+            className="brand-logo-news"
+            alt="brand  logo"
+          />
+
+          <p className="help-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
+            nulla
+          </p>
+
+          <p className="help-paragraph">
+            enim nec massa morbi ut diam. Porta morbi ac vitae integer vel
+            aliquet
+          </p>
+          <p className="help-paragraph">
+            ipsum, facilisis varius. At suspendisse purus proin nunc. Morbi
+            vulputate
+          </p>
+          <p className="help-paragraph">
+            suscipit orci et, feugiat vivamus pulvinar ut. Pulvinar quam
+            faucibus vitae
+          </p>
+          <p className="help-paragraph">
+            massa, ipsum, varius. Odio faucibus cursus nascetur dolor posuere.
+          </p>
+          <p className="help-paragraph">
+            Accumsan, cursus est in massa nam. Ut pretium a sit nulla blandit in
+          </p>
+          <p className="help-paragraph">
+            feugiat. Felis nec pellentesque ut aliquam facilisis libero.
+          </p>
+        </div>
+
+        <div className="cidi-word">
+          <h4 className="subscribe-news">Subscribe to our Newsletter</h4>
+
+          <form className="email-submit">
+            <input type="text" placeholder="Email" className="email-input" />
+
+            <button className="subscribe-button">Subscribe</button>
+          </form>
+
+          <nav className="connect-withUs">
+            <h3 className="subscribe-news">Connect with us!</h3>
+
+            <nav className="social-icon">
+              <a href="social" className="socialIcon">
+                <img
+                  src="/image/facebook.png"
+                  alt="facebook"
+                  className="social-name-icon"
+                />
+              </a>
+
+              <a href="social" className="socialIcon">
+                <img
+                  src="/image/linkedin.png"
+                  alt="facebook"
+                  className="social-name-linkedin"
+                />
+              </a>
+
+              <a href="social" className="socialIcon">
+                <img
+                  src="/image/facebook.png"
+                  alt="facebook"
+                  className="social-name-icon"
+                />
+              </a>
+
+              <a href="social" className="socialIcon">
+                <img
+                  src="/image/linkedin.png"
+                  alt="facebook"
+                  className="social-name-linkedin"
+                />
+              </a>
+            </nav>
+          </nav>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="div-wrapper">
+      <div className="footer">
+        <p className="footer-paragraph">
+          © Copyright 2022 CIDI. All Right's Reserved. Experienced by HELLENSoft
+        </p>
+
+        <nav className="footer-link">
+          <a href="socialmedial" className="social-media-anchor">
+            Career
+          </a>
+          <a href="socialmedial" className="social-media-anchor">
+            Volunteer
+          </a>
+          <a href="socialmedial" className="social-media-anchor">
+            Team
+          </a>
+          <a href="socialmedial" className="social-media-anchor">
+            Donation
+          </a>
+          <a href="socialmedial" className="social-media-anchor">
+            About
+          </a>
+          <a href="socialmedial" className="social-media-anchor">
+            Project
+          </a>
+          <a href="socialmedial" className="social-media-anchor">
+            Contact
+          </a>
+        </nav>
       </div>
     </div>
   );

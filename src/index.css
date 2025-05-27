@@ -298,7 +298,7 @@ body {
 }
 
 .Our-service {
-  padding: 4rem 8rem;
+  padding: 4rem 8rem 6rem 8rem;
   background-color: #3a415408;
   max-width: 110rem;
   width: 100%;
@@ -334,7 +334,7 @@ body {
   display: flex;
   gap: 20px;
   padding: 2.5rem 3.5rem;
-  box-shadow: 0px 12px 24px 0px #0000000D;
+  box-shadow: 0px 12px 24px 0px #0000000d;
 }
 
 .education {
@@ -342,14 +342,14 @@ body {
   gap: 20px;
   padding: 2.5rem 3.5rem;
   background-color: #ffffff;
-  box-shadow: 0px 12px 24px 0px #0000000D;
+  box-shadow: 0px 12px 24px 0px #0000000d;
 }
 
 .water {
   display: flex;
   gap: 20px;
   padding: 2.5rem 3.5rem;
-  box-shadow: 0px 12px 24px 0px #0000000D;
+  box-shadow: 0px 12px 24px 0px #0000000d;
 }
 
 .we-do-title {
@@ -380,16 +380,240 @@ body {
   color: #3a4154;
 }
 
-.view-more {
-  margin-top: 4rem;
+.kauga {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 77px;
-  height: 27px;
-  padding: 5px 16px;
+  margin: 4rem auto 0 auto;
+  padding: 1rem 1.5rem;
+  background-color: #59ba51;
+  font-weight: 600;
+  line-height: 27px;
+  color: #ffffff;
+  border-radius: 4px;
+  width: 130px;
+  height: 30px;
+  text-decoration: none;
+}
+
+/*   VOLUNTEER TESTIMONIAL   */
+.volunteer-testimonial {
+  background-color: #ffffff;
+  padding: 4rem 8rem;
+  max-width: 110rem;
+}
+
+.slider {
+  margin-top: 6rem;
+  max-width: 100rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.slide {
+  /* position: absolute; */
+  top: 0;
+  width: 260px;
+  height: 290px;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+
+  box-shadow: 0px 8px 24px 0px #00000012;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.semi-colons {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 1.3rem auto;
+}
+
+.testimonial-paragraph {
+  font-family: Sora;
+  font-size: 12px;
+  letter-spacing: 4%;
+  line-height: 24px;
+  color: #111c4280;
+}
+
+.line {
+  font-size: 18px;
+  margin: 1.1rem auto;
+}
+
+.name-testimonial {
+  font-family: Sora;
+  font-size: 13px;
+  line-height: 24px;
+  color: #111c42;
+  margin-top: 1.1rem;
+}
+
+.previous-next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.button--button {
+  width: 37px;
+  height: 37px;
+  color: #111c4299;
+  border-radius: 50%;
+  border: solid 1px #111c4299;
+  cursor: pointer;
+}
+
+/* HELP US DONATE */
+.help-donate {
+  margin: 4rem 8rem auto 8rem;
+  padding: 0 10rem;
+  max-width: 110rem;
+  background: #111c42;
+  box-shadow: 0px 15px 44px 0px #007aff26;
+  width: 100%;
+  height: 110px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help-paragraph {
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+  /* color: red; */
+}
+
+.button-donate {
+  width: 120px;
+  height: 48px;
+  padding-left: 6rem;
+  background-color: #59ba51;
+
+  font-size: 14px;
+  align-content: center;
   text-decoration: none;
   color: #ffffff;
+}
+
+/*  CIDI AND SUBSCRIBE  */
+.cidi-subscribe {
+  position: relative;
+  padding: 5rem 8rem 1rem 8rem;
+  max-width: 110rem;
+  width: 100%;
+  background-color: #3a415408;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-logo-news {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.help-paragraph {
+  font-size: 13px;
+  line-height: 24px;
+  color: #111c4266;
+}
+
+.subscribe-news {
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.email-input {
+  width: 399px;
+  height: 40px;
+  padding: 6px 12px;
+  border: solid 1px #3a415433;
+}
+
+.subscribe-button {
+  position: absolute;
+  top: 31.5%;
+  right: 7%;
+
   background-color: #59ba51;
-  border-radius: 6px;
+  color: #ffffff;
+  font-size: 12px;
+  border: none;
+  width: 180px;
+  height: 54px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.connect-withUs {
+  margin-top: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialIcon {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #59ba51;
+  border-radius: 50%;
+}
+
+.social-name-linkedin {
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+/* FOOTER */
+.footer {
+  max-width: 110rem;
+  width: 100%;
+  background-color: #3a415408;
+  padding: 3rem 8rem 4.5rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-paragraph {
+  font-size: 14px;
+  color: #111c42;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-media-anchor {
+  font-size: 12px;
+  color: #111c4299;
+  text-decoration: none;
 }

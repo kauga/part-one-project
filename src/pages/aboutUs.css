@@ -1,0 +1,66 @@
+.aboutUs {
+  max-width: 110rem;
+  width: 100%;
+}
+
+.heading-one-about {
+  font-family: Sora;
+  font-size: 44px;
+  font-weight: 600;
+  color: #111c42;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+
+.who-we-image {
+  max-width: 110rem;
+  padding: 3rem 8rem 8rem 8rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sub-heading-about {
+  font-size: Sora;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111c42;
+  line-height: 100%;
+  margin-bottom: 2rem;
+}
+
+.about-paragraph {
+  font-size: 12px;
+  line-height: 27px;
+  color: #111c4266;
+}
+
+.oongo {
+  font-weight: 600;
+  color: #111c42;
+}
+
+.crops-img {
+  width: 100%;
+  height: 400px;
+}
+
+.cow {
+  position: absolute;
+  top: 37%;
+  right: 29%;
+  width: 21%;
+}
+
+/* IMAGE-WORDS */
+.image-words {
+  max-width: 110rem;
+  padding: 1rem 8rem;
+  background-color: #3a415408;
+}
