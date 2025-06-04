@@ -1,4 +1,6 @@
 import AboutUs from "./pages/aboutUs";
+import EducationPage from "./pages/education";
+
 
 export default function App() {
   return (
@@ -13,6 +15,7 @@ export default function App() {
         <CidiSubscribe />
         <Footer />
         <AboutUs />
+        <EducationPage />
       </div>
     </div>
   );

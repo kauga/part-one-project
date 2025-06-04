@@ -59,8 +59,222 @@
 }
 
 /* IMAGE-WORDS */
+
+.div-wrapper-for-image-words {
+  display: flex;
+  justify-content: center; /* Center child .image-words */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .image-words {
   max-width: 110rem;
-  padding: 1rem 8rem;
+
   background-color: #3a415408;
+  padding: 8rem;
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  column-gap: 13rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.youngMen {
+  position: absolute;
+  top: 43%;
+  left: 26%;
+  width: 20%;
+}
+
+.aboutFontSize {
+  font-size: 14px;
+}
+
+/* MISSION AND VISION */
+.missionVision {
+  margin: 8rem auto;
+  padding: 5rem 3rem;
+  background-color: #111c42;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.mission-heading {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.mission-paragraph {
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff99;
+}
+
+/* CORE VALUES */
+.core-values {
+  padding: 0 8rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.coreValue-heading {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.core-values-paragraph {
+  margin-left: 3.3rem;
+}
+
+.paragraph-value {
+  line-height: 26px;
+  color: #111c4280;
+  font-size: 14.5px;
+}
+
+.value-list {
+  margin-top: 4rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20rem;
+}
+
+ul,
+li {
+  color: #111c4280;
+  line-height: 34px;
+  font-size: 13px;
+}
+
+/* OUR TEAM */
+.our-team {
+  /* margin-top: 7rem; */
+  max-width: 110rem;
+  padding: 7rem 8rem 5rem 8rem;
+
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.team-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ourTeam-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 4rem;
+}
+
+.team-photos {
+  width: 100%;
+  height: 100%;
+}
+
+/* FAQS */
+.heading-fqas {
+  font-size: 24px;
+  color: #000000;
+  margin: 6rem auto 3rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqs {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #FFFFFF; */
+  box-shadow: 0px 12px 24px 0px #0000000f;
+  width: 80%;
+  height: 100%;
+  margin-left: 6rem;
+}
+
+.words-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  height: 100%;
+  background-color: #ffffff;
+
+  border-bottom: solid #0b0c1b17 1px;
+}
+
+.none-border {
+  border-bottom: none;
+}
+
+.faqs-paragraph {
+  font-size: 15px;
+  line-height: 47px;
+}
+
+.plus {
+  border: none;
+  background-color: #ffffff;
+  width: 40px;
+  cursor: pointer;
+}
+
+.plus-image {
+  width: 20px;
+  height: 20px;
+}
+
+/* DONATE BUTTON */
+.donate-button {
+  width: 100%;
+  margin: auto 8rem;
+  padding: 4rem 8rem;
+  background-color: #111c42;
+  box-shadow: 0px 15px 44px 0px #007aff26;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.donate-paragraph {
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.help-button {
+  font-size: 16px;
+  line-height: 36px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
+
+  width: 150px;
+  height: 45px;
+  background-color: #59ba51;
+  border: none;
 }
