@@ -1,0 +1,138 @@
+.donation-form-div {
+  max-width: 110rem;
+  width: 100%;
+  padding: 8rem 8rem 2rem 8rem;
+  margin-bottom: 6rem;
+}
+
+.donation-form-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 35px;
+  color: #111c42;
+  line-height: 100%;
+}
+
+.donation-form {
+  background-color: #f9f9fa;
+  border: solid 0.5px #111c4233;
+  padding: 4rem 2.8rem;
+  width: 80%;
+  margin-left: 6rem;
+  border-radius: 5px;
+}
+
+.donation-form,
+label {
+  color: #111c42;
+  font-size: 14px;
+}
+
+.donor-names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.input-names {
+  width: 100%;
+  border: solid 0.5px #111c4233;
+  padding: 22px 18px;
+  border-radius: 5px;
+  background-color: #f9f9fa;
+}
+
+.lable-names {
+  color: #111c42;
+  font-size: 14px;
+  margin-top: 1px;
+}
+
+.donation-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.3rem;
+  width: 100%;
+}
+
+.salect-option {
+  width: 48%;
+  padding: 22px 18px;
+  padding-right: 18px;
+  border: solid 0.5px #111c4233;
+  background-color: #f9f9fa;
+  border-radius: 5px;
+}
+
+.width-input-control {
+  width: 43.9%;
+}
+
+.dona-note {
+  width: 95.3%;
+  height: 100px;
+  margin-bottom: 20px;
+  text-align: top;
+}
+
+.margin-control {
+  margin-top: 20px;
+}
+
+.phoneNumber-div {
+  margin-top: 20px;
+}
+
+.area-code {
+  width: 13%;
+}
+
+.phone-number {
+  width: 24%;
+}
+
+.codeArea-phoneNumer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.dona-street {
+  width: 95.3%;
+}
+
+.donar-gap {
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.donar-city {
+  width: 43.4%;
+}
+
+.wrapper-btn {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formSubmitButton {
+  text-align: center;
+  width: 190px;
+  height: 58px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  background-color: #59BA51;
+}

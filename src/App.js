@@ -1,6 +1,7 @@
 import AboutUs from "./pages/aboutUs";
 import EducationPage from "./pages/education";
-
+import Donate from "./pages/donate";
+import ContactUs from "./pages/contact";
 
 export default function App() {
   return (
@@ -16,6 +17,8 @@ export default function App() {
         <Footer />
         <AboutUs />
         <EducationPage />
+        <Donate />
+        <ContactUs />
       </div>
     </div>
   );

@@ -248,6 +248,7 @@ li {
 /* DONATE BUTTON */
 .donate-button {
   width: 100%;
+  max-width: 110rem;
   margin: auto 8rem;
   padding: 4rem 8rem;
   background-color: #111c42;

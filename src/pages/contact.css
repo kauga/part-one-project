@@ -1,0 +1,136 @@
+.contactUs-div {
+  max-width: 110rem;
+  padding: 1rem 8rem;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.openningAddressGet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.openningHours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addressIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.headingAddress {
+  font-size: 18px;
+  color: #111c42;
+  margin: 30px auto;
+  font-weight: 600;
+}
+
+.addressWord {
+  font-size: 15px;
+  color: #111c4280;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+/* LOCATED AREA */
+.contactUs-located {
+  width: 100%;
+}
+
+.locatedArea {
+  max-width: 110rem;
+  padding: 5rem 8rem 4rem 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.locatedImg {
+  width: 100%;
+  height: 500px;
+}
+
+.headingContact-us {
+  text-transform: uppercase;
+  color: #111c4280;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.contact-paragraph {
+  font-size: 34px;
+  color: #111c42;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.names-div-margin {
+  margin-top: 2rem;
+}
+
+.names-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nameAddress-input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding-top: 1.2rem;
+  border-bottom: solid 1px #111c4266;
+}
+
+.nameAddress-input-message {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding-top: 1.3rem;
+  border-bottom: solid 1px #111c4266;
+}
+
+.sendMessageButton {
+  margin-top: 3rem;
+  color: #ffffff;
+  background-color: #59ba51;
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  border: none;
+}
+
+/* .positionTrial {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.positionTrial2 {
+  position: absolut;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111c42;
+  bottom: 3%;
+  height: 50px;
+  margin: 4rem 8rem 0 8rem;
+  padding: 4rem 6rem;
+  width: 70%;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 15px 44px 0px #007AFF26;
+  z-index: 100;
+} */
