@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ContactUs() {
   return (
@@ -68,6 +68,8 @@ function ContactUsAddress() {
 }
 
 function LocatedArea() {
+  const [name, setName] = useState();
+  console.log(name);
   return (
     <div className="div-wrapper">
       <div className="locatedArea">
@@ -88,6 +90,8 @@ function LocatedArea() {
                 type="text"
                 className="nameAddress-input"
                 placeholder="First Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="text"
@@ -125,7 +129,7 @@ function LocatedArea() {
 
 function ContactUsCidiSubscribe() {
   return (
-     <div className="div-wrapper">
+    <div className="div-wrapper">
       <div className="donate-button">
         <p className="donate-paragraph">Help us educate a Child</p>
         <button className="help-button">Donate</button>
@@ -260,6 +264,5 @@ function ContactUsFooter() {
     </div>
   );
 }
-
 
 export default ContactUs;
