@@ -16,7 +16,7 @@ function HomePage() {
 
 function MisweLivestock() {
   return (
-    <div className="div-wrappe">
+    <div className="div-wrapper">
       <div className="misweTogether">
         <div
           className="miswe-background"

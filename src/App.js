@@ -29,7 +29,7 @@ export default function App() {
 
 function Header() {
   return (
-    <div className="div-wrappe">
+    <div className="div-wrapper">
       <div className="header">
         <div className="logo-div">
           <img src="/image/logo-image.png" className="brand-logo" alt="logo" />
