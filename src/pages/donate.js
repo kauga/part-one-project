@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Donate() {
   return (
@@ -12,6 +12,8 @@ function Donate() {
 }
 
 function DonateForm() {
+  const [firstName, setFirstName] = useState();
+  console.log(setFirstName);
   return (
     <div className="div-wrapper">
       <div className="donation-form-div">
@@ -33,6 +35,8 @@ function DonateForm() {
               type="text"
               placeholder="First Name"
               id="1"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
               className="input-names"
             />
 

@@ -13,11 +13,13 @@ export default function App() {
         <BrowserRouter>
           <Header />
           <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="HomePage" element={<HomePage />} />
             <Route path="AboutUS" element={<AboutUs />} />
             <Route path="EducationPage" element={<EducationPage />} />
             <Route path="Donate" element={<Donate />} />
             <Route path="ContactUs" element={<ContactUs />} />
+            {/* <Route path="ContactUs" element={<ContactUs />} /> */}
           </Routes>
         </BrowserRouter>
       </div>
@@ -93,9 +95,26 @@ function Header() {
               <Link to="/aboutUs" className="link-style">
                 About
               </Link>
-              <Link to="/education" className="link-style">
-                Projects
-              </Link>
+
+              <div className="_hover-main">
+                <Link to="/education" className="link-style">
+                  Projects
+                </Link>
+
+                <nav className="hoverLinks">
+                  <Link to="/education" className="link-style hoverColorLink">
+                    Education
+                  </Link>
+
+                  <Link to="/education" className="link-style hoverColorLink">
+                    Agriculter
+                  </Link>
+
+                  <Link to="/education" className="link-style hoverColorLink">
+                    Water Sanitation
+                  </Link>
+                </nav>
+              </div>
 
               <Link to="/donate" className="link-style">
                 Donate
