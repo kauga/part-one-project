@@ -210,6 +210,7 @@ li {
   width: 80%;
   height: 100%;
   margin-left: 6rem;
+  margin-bottom: 8rem;
 }
 
 .words-button {
@@ -246,11 +247,11 @@ li {
 }
 
 /* DONATE BUTTON */
-.donate-button {
-  width: 100%;
-  max-width: 110rem;
-  margin: auto 8rem;
-  padding: 4rem 8rem;
+.help-donate-about {
+  /* width: 100%; */
+  /* max-width: 110rem; */
+  /* margin: auto 8rem; */
+  padding: 3rem 8rem;
   background-color: #111c42;
   box-shadow: 0px 15px 44px 0px #007aff26;
   border-top-left-radius: 50px;
@@ -259,6 +260,10 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 94%;
+  width: 90%;
+  left: 0;
 }
 
 .donate-paragraph {

@@ -9,7 +9,7 @@ function AboutUs() {
       <MissionVission />
       <CoreValues />
       <OurTeam />
-      <DonateButton />
+      {/* <DonateButton /> */}
       <CidiSubscribe />
       <Footer />
     </div>
@@ -294,22 +294,29 @@ function OurTeam() {
               />
             </button>
           </div>
+           <div className="help-donate-about">
+          <p className="help-color">Help us educate a Child</p>
+
+          <a href="donate" className="button-donate">
+            Donate
+          </a>
+        </div>
         </div>
       </div>
     </div>
   );
 }
 
-function DonateButton() {
-  return (
-    <div className="div-wrapper">
-      <div className="donate-button">
-        <p className="donate-paragraph">Help us educate a Child</p>
-        <button className="help-button">Donate</button>
-      </div>
-    </div>
-  );
-}
+// function DonateButton() {
+//   return (
+//     <div className="div-wrapper">
+//       <div className="donate-button">
+//         <p className="donate-paragraph">Help us educate a Child</p>
+//         <button className="help-button">Donate</button>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 function CidiSubscribe() {

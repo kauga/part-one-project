@@ -1,13 +1,20 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Donate from "./donate";
 
 function HomePage() {
+  <BrowserRouter>
+    <Routes>
+      <Route path="Donate" element={<Donate />} />
+    </Routes>
+  </BrowserRouter>;
   return (
     <div>
       <MisweLivestock />
       <WhoWeAre />
       <OurService />
       <VolunteerTestimonial />
-      <HelpUsDonate />
+      {/* <HelpUsDonate /> */}
       <CidiSubscribe />
       <Footer />
     </div>
@@ -31,9 +38,12 @@ function MisweLivestock() {
 
           <div className="two-button">
             <button className="button--one">Learn More</button>
-            <a href="home" className="button--two">
+            {/* <a href="home" className="button--two">
               Make Donation
-            </a>
+            </a> */}
+            <Link to="/donate" className="link-style button--two">
+              Make Donate
+            </Link>
           </div>
         </div>
 
@@ -251,24 +261,26 @@ function VolunteerTestimonial() {
           <button className="button--button prev-button">←</button>
           <button className="button--button next-button">→</button>
         </nav>
+
+        <div className="help-donate">
+          <p className="help-color">Help us Improve Agriculture Livelihood</p>
+
+          <a href="donate" className="button-donate">
+            Donate
+          </a>
+        </div>
       </div>
     </div>
   );
 }
 
-function HelpUsDonate() {
-  return (
-    <div className="div-wrapper">
-      <div className="help-donate">
-        <p className="help-paragraph">Help us Improve Agriculture Livelihood</p>
+// function HelpUsDonate() {
+//   return (
+//     <div className="div-wrapper">
 
-        <a href="donate" className="button-donate">
-          Donate
-        </a>
-      </div>
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
 function CidiSubscribe() {
   return (

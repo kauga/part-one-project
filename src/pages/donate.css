@@ -3,6 +3,7 @@
   width: 100%;
   padding: 8rem 8rem 2rem 8rem;
   margin-bottom: 6rem;
+  position: relative;
 }
 
 .donation-form-heading {
@@ -22,6 +23,7 @@
   width: 80%;
   margin-left: 6rem;
   border-radius: 5px;
+  margin-bottom: 5rem;
 }
 
 .donation-form,
@@ -131,8 +133,25 @@ label {
   text-align: center;
   width: 190px;
   height: 58px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   cursor: pointer;
-  background-color: #59BA51;
+  background-color: #59ba51;
+}
+
+.help-donate-donation {
+  padding: 0 10rem;
+  max-width: 110rem;
+  background: #111c42;
+  box-shadow: 0px 15px 44px 0px #007aff26;
+  width: 65%;
+  height: 110px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 101%;
 }

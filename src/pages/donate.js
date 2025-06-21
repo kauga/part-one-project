@@ -4,7 +4,7 @@ function Donate() {
   return (
     <div className="">
       <DonateForm />
-      <DonationDonateButton />
+      {/* <DonationDonateButton /> */}
       <DonationCidiSubscribe />
       <DonationFooter />
     </div>
@@ -12,8 +12,27 @@ function Donate() {
 }
 
 function DonateForm() {
-  const [firstName, setFirstName] = useState();
-  console.log(setFirstName);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [amount, setAmount] = useState("");
+   const [typeDonation, setTypeDonation] = useState('');
+  const [message, setMessage] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [email, setEmail] = useState("");
+  const [code, setCode] = useState("");
+  const [number, setNumber] = useState("");
+  const [address, SetAddress] = useState('');
+   const [addressTwo, SetAddressTwo] = useState('');
+    const [city, SetCity] = useState('');
+     const [state, SetState] = useState('');
+      const [postCode, setPostCode] = useState('');
+
+  console.log(typeDonation);
+
+  function HandleSubmit (e) {
+    e.preventDefault()
+    useState("")
+  }
   return (
     <div className="div-wrapper">
       <div className="donation-form-div">
@@ -27,7 +46,7 @@ function DonateForm() {
           />
         </span>
 
-        <form className="donation-form">
+        <form className="donation-form" onSubmit={HandleSubmit} required>
           <lable>Donor Name</lable>
 
           <div className="donor-names">
@@ -44,13 +63,15 @@ function DonateForm() {
               type="text"
               placeholder="Last Name"
               id="1"
+              value={lastName}
               className="input-names"
+              onChange={(e) => setLastName(e.target.value)}
             />
           </div>
 
           <div className="donation-type">
             <lable className="lable-names">Type of Donation</lable>
-            <select className="salect-option">
+            <select className="salect-option" value={typeDonation} onChange={e => setTypeDonation(e.target.value)}>
               <option className="option-value">Cash</option>
               <option className="option-value">float</option>
             </select>
@@ -62,6 +83,8 @@ function DonateForm() {
               type="text"
               placeholder="$100.00"
               id="1"
+              value={amount}
+              onChange={(e) => setAmount(Math.trunc(e.target.value))}
               className="input-names width-input-control"
             />
           </div>
@@ -72,7 +95,9 @@ function DonateForm() {
               type="text"
               placeholder="Message"
               id="1"
+              value={message}
               className="input-names dona-note"
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
 
@@ -82,7 +107,9 @@ function DonateForm() {
               type="text"
               placeholder="Company Name"
               id="1"
+              value={companyName}
               className="input-names width-input-control"
+              onChange={(k) => setCompanyName(k.target.value)}
             />
           </div>
 
@@ -92,7 +119,10 @@ function DonateForm() {
               type="text"
               placeholder="example@gmail.com"
               id="1"
+              value={email}
               className="input-names width-input-control"
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
 
@@ -106,14 +136,18 @@ function DonateForm() {
                 type="text"
                 placeholder="Area Code"
                 id="1"
+                value={code}
                 className="input-names area-code"
+                onChange={(e) => setCode(Math.trunc(e.target.value))}
               />
 
               <input
                 type="text"
                 placeholder="Phone Number"
                 id="1"
+                value={number}
                 className="input-names phone-number"
+                onChange={(e) => setNumber(Math.trunc(e.target.value))}
               />
             </div>
           </div>
@@ -123,8 +157,10 @@ function DonateForm() {
             <input
               type="text"
               placeholder="Street Address"
+              value={address}
               id="1"
               className="input-names dona-street"
+              onChange={e => SetAddress(e.target.value)}
             />
           </div>
 
@@ -132,8 +168,10 @@ function DonateForm() {
             <input
               type="text"
               placeholder="Street Address 2"
+              value={addressTwo}
               id="1"
               className="input-names dona-street"
+              onChange={e => SetAddressTwo(e.target.value)}
             />
           </div>
 
@@ -141,15 +179,19 @@ function DonateForm() {
             <input
               type="text"
               placeholder="City"
+              value={city}
               id="1"
               className="input-names donar-city"
+              onChange={e => SetCity(e.target.value)}
             />
 
             <input
               type="text"
               placeholder="State / Province"
+              value={state}
               id="1"
               className="input-names  donar-city"
+              onChange={e => SetState(e.target.value)}
             />
           </div>
 
@@ -157,30 +199,40 @@ function DonateForm() {
             <input
               type="text"
               placeholder="Postal / Zip code"
+              value={postCode}
               id="1"
               className="input-names dona-street"
+              onChange={e => setPostCode(Math.trunc(e.target.value))}
             />
           </div>
 
           <div className="wrapper-btn">
-            <button className="formSubmitButton">Submit</button>
+            <button className="formSubmitButton" onClink={HandleSubmit}>Submit</button>
           </div>
         </form>
+
+        <div className="help-donate-donation">
+          <p className="help-color">Help us educate a Child</p>
+
+          <a href="donate" className="button-donate">
+            Donate
+          </a>
+        </div>
       </div>
     </div>
   );
 }
 
-function DonationDonateButton() {
-  return (
-    <div className="div-wrapper">
-      <div className="donate-button">
-        <p className="donate-paragraph">Help us educate a Child</p>
-        <button className="help-button">Donate</button>
-      </div>
-    </div>
-  );
-}
+// function DonationDonateButton() {
+//   return (
+//     <div className="div-wrapper">
+//       <div className="donate-button">
+//         <p className="donate-paragraph">Help us educate a Child</p>
+//         <button className="help-button">Donate</button>
+//       </div>
+//     </div>
+//   );
+// }
 
 function DonationCidiSubscribe() {
   return (

@@ -5,6 +5,7 @@ import EducationPage from "./pages/education";
 import Donate from "./pages/donate";
 import ContactUs from "./pages/contact";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+//import React, { useEffect, useRef } from "react";
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
             <Route path="AboutUS" element={<AboutUs />} />
             <Route path="EducationPage" element={<EducationPage />} />
             <Route path="Donate" element={<Donate />} />
-            <Route path="ContactUs" element={<ContactUs />} />
+            <Route path="ContactUS" element={<ContactUs />} />
             {/* <Route path="ContactUs" element={<ContactUs />} /> */}
           </Routes>
         </BrowserRouter>
@@ -28,6 +29,28 @@ export default function App() {
 }
 
 function Header() {
+  // const heighty =document.querySelector('.misweTogether');
+  // const stickyNavigation = document.querySelector('.header');
+  // const targetHeight = heighty.getBoundingClientRect().height;
+
+  // const stickyMenu = function (entries) {
+  //   const [entry] = entries;
+
+  //   if(!entry.isIntersecting) {
+  //     heighty.classList.add('sticky-active')
+  //   } else {
+  //     heighty.classList.remove('sticky-active')
+  //   }
+  // };
+
+  // const headerObserver = New IntersectionObserver(stickyMenu, {
+  //   root: null,
+  //   threshold: 0,
+  //   rootMargin: `-${targetHeight}px`,
+  // });
+
+  // headerObserver.observer(stickyNavigation);
+
   return (
     <div className="div-wrapper">
       <div className="header">
@@ -128,12 +151,13 @@ function Header() {
               </Link>
             </div>
             <nav>
-              <a href="buy" className="green-link">
-                Donate now
-              </a>
+              <Link to="/donate" className="link-style green-link">
+                Donate
+              </Link>
             </nav>
           </div>
         </div>
+        <div className="menu-open">🟰</div>
       </div>
     </div>
   );
